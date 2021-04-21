@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # J-FutbolManager
 
 <p align='left' >
@@ -28,3 +29,7 @@
 * El uso correcto de todo lo aprendido (inclusive, buenas practicas de laboratorio 3).
 * Los jugadores que representa tienen valores en EUROS y DOLARES, pero nuestro amigo Guillermo actualmente esta en la Argentina con lo que necesita Pesos! asique el montoTotal debe ser calculado en Pesos.
 * Cada Billete pesa 1 gramo.
+=======
+# ResolucionParcial
+ResolucionParcial
+>>>>>>> 9b80ff48467ec96ed317ccb25d91c186b4a7d760
