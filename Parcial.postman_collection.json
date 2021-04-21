@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "9c10bc82-de8b-4b22-8b66-87f3aff0784b",
+		"name": "Parcial",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getPerson",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/person/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"person",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addPersonJugadorDolar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"typePersona\" : \"JUGADOR\",\r\n    \"id\": \"2\",\r\n    \"name\": \"Lea\",\r\n    \"lastName\": \"Dall\",\r\n    \"currency\": {\r\n        \"currencyType\" : \"DOLAR\",\r\n        \"id\": 2,\r\n        \"monto\" : 100\r\n    },\r\n    \"fechaNacimiento\": \"12-02-1987\"\r\n    \r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/person",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"person"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addPersonRepresenatnte",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"typePersona\" : \"REPRESENTANTE\",\r\n    \"id\": \"4\",\r\n    \"name\": \"Lea\",\r\n    \"lastName\": \"Dall\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/person",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"person"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "putjugadorRepresentante",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/person/4/jugadores/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"person",
+						"4",
+						"jugadores",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addPersonJugadorEuro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"typePersona\" : \"JUGADOR\",\r\n    \"id\": \"14\",\r\n    \"name\": \"Angel\",\r\n    \"lastName\": \"Caniggia\",\r\n    \"currency\": {\r\n        \"currencyType\" : \"EURO\",\r\n        \"id\": 7,\r\n        \"monto\" : 200\r\n    },\r\n    \"fechaNacimiento\": \"12-02-1987\"\r\n    \r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/person",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"person"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addCurrency",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"currencyType\" : \"DOLAR\",\r\n        \"id\": 2,\r\n        \"monto\" : 100\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/currency",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"currency"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
