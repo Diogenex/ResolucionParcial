@@ -1,0 +1,2 @@
+# ResolucionParcial
+ResolucionParcial
